@@ -1,0 +1,43 @@
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.04);
+    margin-top: 8px;
+}
+
+.numberItem {
+    margin-bottom: 24px;
+}
+
+.emailItem {
+    margin-bottom: 48px;
+}
+
+.form {
+    width: 400px;
+}
+
+
+@media (max-width: 500px) {
+    .form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .form {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+

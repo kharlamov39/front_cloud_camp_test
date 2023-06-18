@@ -1,0 +1,98 @@
+.formItem {
+    margin-bottom: 24px;
+}
+
+.inputText {
+    width: 300px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    outline: none;
+    margin: 8px 0px;
+}
+  
+.textareaContainer {
+    position: relative;
+    font-size: 12px;
+}
+  
+.textareaItem {
+    width: 100%;
+    height: 84px;
+    padding: 12px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.48);
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    outline: none;
+    margin: 8px 0px;
+    resize: none;
+}
+  
+.textareaCounter {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+  
+  
+.select {
+    width: 300px;
+    padding: 12px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.48);
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    outline: none;
+}
+  
+span {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 1);
+}
+  
+.spanGroup {
+    display: flex;
+    align-items: center;
+}
+  
+.spanGroup span {
+    margin-left: 8px;
+}
+  
+.advantages {
+    display: flex;
+    align-items: center;
+}
+  
+.checkbox {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    outline: none;
+}
+  
+.tip {
+    color: rgba(0, 0, 0, 0.48);
+    font-size: 12px;
+}
+  
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+    .inputText {
+        width: 100%
+    }
+    .select {
+        width: 100%;
+    }
+    .formItem {
+        width: 100%;
+    }
+    .textareaContainer {
+        font-size: 10px;
+    }
+}
