@@ -12,7 +12,7 @@ const FormCreatePage = () => {
 
     return (
         <div className={styles.container}>
-            <Stepper step={step} setStep={setStep} />
+            <Stepper step={step} />
             <MainForm step={step} setStep={setStep} />
             { success === true && <ModalSuccess /> }
             { success === false && <ModalError /> }

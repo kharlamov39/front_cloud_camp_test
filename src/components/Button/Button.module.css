@@ -16,5 +16,18 @@
     color: #5558FA;
 }
 
+.blue:hover {
+    color: rgb(182, 182, 182);
+}
 
+.white:hover {
+    color: rgb(60, 0, 172);
+}
 
+.blue:active {
+    background-color: black;
+}
+
+.white:active {
+    background-color: black;
+}

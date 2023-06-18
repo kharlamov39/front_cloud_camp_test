@@ -4,10 +4,9 @@ import checkStep from '../../assets/checkStep.svg';
 
 type Props = {
     step: number
-    setStep: any
 }
 
-const Stepper:React.FC<Props> = ({step, setStep}) => {
+const Stepper:React.FC<Props> = ({step}) => {
 
     const WIDTH = step * 50
 

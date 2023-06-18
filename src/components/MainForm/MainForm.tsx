@@ -24,22 +24,21 @@ const validationSchema = Yup.object().shape({
     .required("Обязательное поле"),
     sex: Yup.string().oneOf(["man", "woman"], "Выберите пол"),
     advantages: Yup.array()
-    .of(Yup.string())
-    .required("Добавьте хотя бы одно преимущество"),
-    checkboxGroup: Yup.array().of(Yup.string().required("Выберите хотя бы один вариант")),
+    .of(Yup.string()),
+    checkboxGroup: Yup.array().of(Yup.string()),
     radioGroup: Yup.string().required("Выберите вариант"),
     about: Yup.string().max(200, "Максимальная длина 200 символов"),
 });
 
 type Props = {
     step: number
-    setStep: any
+    setStep: (step:number) => void
 }
 
 const MainForm:React.FC<Props> = ({step, setStep}) => {
     
-    const [ valid, setValid] = useState(false)
-    const [ count, setCount] = useState(0)
+    const [ valid, setValid] = useState<boolean>(false)
+    const [ count, setCount] = useState<number>(0)
     const dispatch = useAppDispatch()
     const { email, phone} = useTypedSelector(state => state.form)
   
